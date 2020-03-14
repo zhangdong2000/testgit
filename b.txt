@@ -1,0 +1,21 @@
+1、Git命令提示：
+	cd 进入
+	git mkdir 文件名
+	git init 初始化当前文件夹，变成.git程序可控制的文件
+	git add 文件名，将当前的文件暂时添加到暂存区里去
+	git commit -m "提示名" 告诉Git，把文件提交到仓库，候命跟的内容是本次提交所做的提示内容
+	git status 查看是否还有文件未提交
+	git diff 文件名 查看文件做了什么修改
+	git log 查看对文件做的历史修改记录
+	git log -pretty=oneline 将历史记录整理成一行查看
+	git reset -hard HEAD^  回退到上个版本，上上个版本用HEAD^^
+	git reset -hard HEAD~100 版本回退
+	cat 文件名 查看回退后的版本
+	get reset -hard 版本号 恢复到新的版本中，根据版本号
+	git reflog 关闭命令行后，获取历史版本号
+	git checkout -- 文件名 修改文件，在未添加到暂存区之前撤销修改
+	
+	rm 文件名 删除文件
+	git commit -- 文件名  删除文件，未commit之前，可以使用此命令提示符恢复删除的文件
+	
+	
