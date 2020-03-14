@@ -17,5 +17,37 @@
 	
 	rm 文件名 删除文件
 	git commit -- 文件名  删除文件，未commit之前，可以使用此命令提示符恢复删除的文件
+分支操作：
+	git remote add origin https://github.com/zhangdong2000/testgit.git  连接远程仓库
+	git push -u origin master 初次推送是需要添加 -u
+			以后推送则用git push origin master
+	git checkout -b dev  创建Dev分支，并且切换到Dev分支上
+			git branch dev	创建dev分支
+		*** git checkout dev	切换到新的dev分支上
+	git merge dev	将分支上的修改合并到master上(dev名字并不是固定的，可以随时更改)
+	
+	git branch	查看分支
+	git branch name	创建分支
+	git checkout name	切换分支：
+	git checkout –b name	创建+切换分支：
+	git merge name	合并某分支到当前分支：
+	git branch –d name	删除分支：
+	git merge –no-ff -m “注释” dev		
+	
+	git stash	将当前的工作现场隐藏起来，等以后或恢复现场继续工作
+		干完紧急的活之后：
+			用git checkout dev 来恢复先前的现场
+			用 git stash list 来查看我们先前的工作现场
+			工作现场还在，Git把stash内容存在某个地方了，但是需要恢复一下，可以使用如下2个方法：
+				1.git stash apply恢复，恢复后，stash内容并不删除，你需要使用命令git stash drop来删除。
+				2.另一种方式是使用git stash pop,恢复的同时把stash内容也删除了。
+					
+	git remote 查看远程库的信息
+	git remote -v 查看远程信息库的详细信息
+	fetch	--抓取
+	push	--推送
+	推送分支：git push origin master
 	
 	
+	后续未完。。。。。。
+			
