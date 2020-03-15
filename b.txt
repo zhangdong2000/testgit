@@ -50,4 +50,17 @@
 	
 	
 	后续未完。。。。。。
+	git pull --rebase origin master：
+	
+			 ! [rejected]        master -> master (fetch first)
+				error: failed to push some refs to 'https://github.com/zhangdong2000/zhandong_1.git'
+				hint: Updates were rejected because the remote contains work that you do
+				hint: not have locally. This is usually caused by another repository pushing
+				hint: to the same ref. You may want to first integrate the remote changes
+				hint: (e.g., 'git pull ...') before pushing again.
+				hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+				
+				通过查看提示信息，我发现，是因为本地仓库和远程仓库的文件不一致所致，也就是说，
+				github允许你本地仓库有的东西，远程仓库里没有，但不允许远程仓库有的东西，你本地
+				仓库没有。问题找到了，解决办法就很简单了，那就是在push之前先同步一下本地仓库与远程仓库的文件。
 			
