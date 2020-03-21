@@ -1,0 +1,5 @@
+
+	1、本文件夹连接的：
+		https://github.com/zhangdong2000/testgit.git远程origin，master上的内容会被推送到原仓origin上
+	2、远程origin是public-origin
+	3、常常用来储藏一些笔记之类的内容
